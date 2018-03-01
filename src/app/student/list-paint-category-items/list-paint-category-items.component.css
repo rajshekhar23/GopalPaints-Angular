@@ -55,3 +55,9 @@
 .list-group-item-text {
     margin: 0 0 11px;
 }
+
+@media all and (min-width:321px) and (max-width: 480px) {
+    .col-xs-4{
+        width:100%;
+    }
+}

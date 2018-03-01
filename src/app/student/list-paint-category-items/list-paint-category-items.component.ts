@@ -6,20 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-paint-category-items.component.css']
 })
 export class ListPaintCategoryItemsComponent implements OnInit {
-  public gridSelected: boolean;
+  
   constructor() {
-    this.gridSelected = true;
   }
-
+  
   ngOnInit() {
-
-  }
-
-  showListView() {
-    this.gridSelected = true;
-  }
-
-  showGridView() {
-    this.gridSelected = false;
   }
 }

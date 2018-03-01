@@ -32,7 +32,7 @@
           </form>
         </li>
         <li>
-          <a routerLink="/" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="[ animate ]">Home</a>
+          <a routerLink="/" class="[ animate ]">Home</a>
         </li>
         <li>
           <a class="[ dropdown-toggle ][ animate ]" data-toggle="dropdown">Profile
@@ -83,7 +83,7 @@
           <a class="animate" routerLink="contactus">Contact Us</a>
         </li>
         <li class="[ hidden-xs ]" (click)="search()">
-          <a href="#toggle-search" class="[ animate ]">
+          <a class="[ animate ]">
             <span class="[ glyphicon glyphicon-search ]"></span>
           </a>
         </li>
@@ -94,7 +94,7 @@
     <div class="[ container ]">
       <form action="http://bootsnipp.com/search" method="GET" role="search">
         <div class="[ input-group ]">
-          <input type="text" [(ngModel)]='inputSearch' class="[ form-control ]" name="q" placeholder="Search for snippets and hit enter">
+          <input type="text" [(ngModel)]='inputSearch' class="[ form-control ]" name="q" placeholder="Search Here">
           <span class="[ input-group-btn ]">
             <button class="[ btn btn-danger ]" type="reset" (click)="search()">
               <span class="[ glyphicon glyphicon-remove ]"></span>
@@ -112,7 +112,7 @@
   <div class="footer">
     <div class="container">
       <div class="row">
-        <nav class="col-md-4">
+        <nav class="col-md-4 col-sm-4">
           <h3>Our Company
           </h3>
           <ul>
@@ -133,7 +133,7 @@
             </li>
           </ul>
         </nav>
-        <nav class="col-md-4">
+        <nav class="col-md-4 col-sm-4">
           <h3>Product Range
           </h3>
           <ul>
@@ -151,10 +151,10 @@
             </li>
           </ul>
         </nav>
-        <nav class="col-md-4">
+        <nav class="col-md-4 col-sm-4">
         </nav>
 
-        <nav class="col-md-3 col-sm-6 col-xs-12">
+        <nav class="col-md-3 col-sm-4 col-xs-12">
           <h3>XXX-XXX-XXX
           </h3>
           <div class="input-group input-group-md">

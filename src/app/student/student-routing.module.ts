@@ -10,7 +10,7 @@ import { PolicyComponent } from '../policy/policy.component';
     imports: [RouterModule.forChild([
         {
             path: '',
-            component: AboutusComponent
+            component: ListPaintCategoryItemsComponent
         }, {
             path: 'aboutus',
             component: AboutusComponent
