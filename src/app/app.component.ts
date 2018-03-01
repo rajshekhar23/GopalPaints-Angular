@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  public isOpened: boolean;
+  public inputSearch: any;
+
+  constructor() {
+    this.isOpened = false;
+  }
+  search() {
+    this.inputSearch = '';
+    this.isOpened = !this.isOpened;
+  }
 }

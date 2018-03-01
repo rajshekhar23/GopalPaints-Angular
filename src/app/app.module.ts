@@ -7,11 +7,13 @@ import { StudentComponent } from './student/student.component';
 import { SharedModule } from './shared/shared.module';
 import { StudentModule } from './student/student.module';
 import { AppRoutingModule } from './app-routing.module';
+import { PolicyComponent } from './policy/policy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StudentComponent
+    StudentComponent,
+    PolicyComponent
   ],
   imports: [
     AppRoutingModule,
