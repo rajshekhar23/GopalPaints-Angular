@@ -1,20 +1,195 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Brand</a>
+  </div>
 
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="#">Link</a>
+      </li>
+      <li>
+        <a href="#">Link</a>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#">Action</a>
+          </li>
+          <li>
+            <a href="#">Another action</a>
+          </li>
+          <li>
+            <a href="#">Something else here</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#">Separated link</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#">One more separated link</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <form class="navbar-form navbar-left" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a href="#">Link</a>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#">Action</a>
+          </li>
+          <li>
+            <a href="#">Another action</a>
+          </li>
+          <li>
+            <a href="#">Something else here</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#">Separated link</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- /.navbar-collapse -->
+</nav>
+<div style="min-height:240px;">
+  <router-outlet></router-outlet>
+</div>
+<footer class="footer2">
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <nav class="col-md-4">
+          <h3>Our Company
+          </h3>
+          <ul>
+            <li>
+              <a routerLink="aboutus">About Us</a>
+            </li>
+            <li>
+              <a href="#">Product Portfolio</a>
+            </li>
+            <li>
+              <a href="#">Policy And Terms</a>
+            </li>
+            <li>
+              <a href="#">Quality</a>
+            </li>
+            <li>
+              <a href="#">Product Brochure</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="col-md-4">
+          <h3>Product Range
+          </h3>
+          <ul>
+            <li>
+              <a routerLink="paintcategorylist">Enamel Paint</a>
+            </li>
+            <li>
+              <a routerLink="paintcategorylist">Bitumen Paints 1</a>
+            </li>
+            <li>
+              <a routerLink="paintcategorylist">Tespaint</a>
+            </li>
+            <li>
+              <a routerLink="paintcategorylist">View All</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="col-md-4">
+        </nav>
+
+        <nav class="col-md-3 col-sm-6 col-xs-12">
+          <h3>XXX-XXX-XXX
+          </h3>
+          <div class="input-group input-group-md">
+            <input type="text" class="form-control" placeholder="Email Address">
+            <span class="input-group-addon">Subscribe</span>
+          </div>
+          <ul class="social">
+            <li>
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-google-plus"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-pinterest"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+      <!--/.row-->
+    </div>
+    <!--/.container-->
+  </div>
+  <!--/.footer-->
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="pull-left"> Copyright © XXX-XXX-XXX 2018. All right reserved.</div>
+      <div class="pull-right">
+        <ul>
+          <li>
+            <a href="">
+              <span class='glyphicon glyphicon-edit'></span>&nbsp;&nbsp;Send SMS</a>
+          </li>
+          <li>
+            <a href="">
+              <span class='glyphicon glyphicon-envelope'></span>&nbsp;&nbsp;Send Email</a>
+          </li>
+          <li>
+            <a href="">
+              <span class='glyphicon glyphicon-info-sign'></span>&nbsp;&nbsp;Send Enquiry</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--/.footer-bottom-->
+</footer>
